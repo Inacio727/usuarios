@@ -1,0 +1,15 @@
+{
+    "name": "vinicius.inacio2/usuarios",
+    "autoload": {
+        "psr-4": {
+            "ViniciusInacio2\\Usuarios\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "you@example.com"
+        }
+    ],
+    "require": {}
+}
