@@ -5,6 +5,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Exception\HttpNotFoundException;
 use Slim\Factory\AppFactory;
 use MarioJunior2\Tarefes\Service\TarefaService;
+use Projetux\Infra\Debug;
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -28,6 +29,12 @@ $errorMiddleware->setErrorHandler(HttpNotFoundException::class, function (
 //                $response->getBody()->write("Hello, $name");
 //                return $response;
 //            });
+
+$app->get('/teste-debug', function (Request $request, Response $response, array $args){
+    $debug = new Debug();
+    return $debug->debug('teste 00001');
+});
+
 
 $app->get('/tarefas', function (Request $request, Response $response, array $args) {
     $tarefa_service = new TarefaService();
