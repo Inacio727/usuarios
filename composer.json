@@ -1,18 +1,28 @@
 {
-    "name": "vinicius.inacio2/usuarios",
+    "name": "mario.junior2/tarefes",
+    "type": "project",
+    "require": {
+        "slim/slim": "^4.14",
+        "psr/http-client": "^1.0",
+        "slim/psr7": "^1.7"
+    },
     "autoload": {
         "psr-4": {
-            "ViniciusInacio2\\Usuarios\\": "src/"
+            "MarioJunior2\\Tarefes\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Your Name",
-            "email": "you@example.com"
+            "name": "mario.junior2",
+            "email": "mario.junior2@alunos.sc.senac.br"
         }
     ],
-    "require": {
-        "slim/slim": "^4.14",
-        "slim/psr7": "^1.7"
+    "require-dev": {
+        "pestphp/pest": "^2.36"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }
